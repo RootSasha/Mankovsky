@@ -1,17 +1,16 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main() {
-    double x = 1.45;
-    double z = 1.64;
-    double y;
+    double y = 1.45, x = 1.64;
+    double d = y - x;
 
-    y = (x + z) / 2; 
+    // Обчислення прямо в одній змінній
+    double b = 1 + abs(d) + (d * d / 2) + (d * d * d / 3);
 
-    cout << "Variant 6" << endl;
-    cout << "x = " << x << ", z = " << z << endl;
-    cout << "Result y = " << y << endl;
+    cout << "b = " << b << endl;
 
     return 0;
 }
